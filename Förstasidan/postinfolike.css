@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+header {
+    text-align: center;
+    color: #000000;
+    background-color: #d3d3d3;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidobar {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    flex: 0 150px;
+}
+
+.sidobar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidobar ul {
+    list-style: none;
+}
+
+.sidobar ul li {
+    margin-bottom: 15px;
+}
+
+.sidobar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.sidobar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+} 
+
+.image-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post-info {
+    margin-top: 20px;
+}
+
+.post-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.post-info h3 {
+    font-size: 24px;
+    font-style: italic;
+    text-align: right;
+    color: #555;
+}
+
+.post-info h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.post-info p {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.post-footer .date {
+    font-size: 16px;
+    color: #888;
+}
+
+.profil-info {
+    display: flex;
+    align-items: center;
+}
+
+.profil-namn {
+    margin-right: 20px;
+}
+
+.profil-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0 0 10px 0;
+}
+
+.footer-menu li {
+    margin: 0 20 px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+footer p {
+    color: #888;
+    font-size: 14px;
+}
+
+button {
+    background-color: pink;
+    color: crimson;
+}
+
+@media(min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+    .sidobar {
+        width: 150px;
+        height: auto;
+    }
+    .main-content {
+        flex: 1;
+        padding: 40px;
+    }
+
+}
